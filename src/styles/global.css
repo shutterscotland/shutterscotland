@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Injects your raw paper white background globally */
+body {
+	background-color: #FAFAFA;
+}

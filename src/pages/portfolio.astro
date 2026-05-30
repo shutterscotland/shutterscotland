@@ -1,0 +1,82 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Route Operations | Shutter Scotland">
+	<main class="py-12 px-6 md:px-12 max-w-6xl mx-auto">
+		<div class="space-y-4 border-b border-punk-black pb-8">
+			<span class="font-mono-clean text-xs uppercase bg-punk-black text-punk-white px-2 py-0.5 tracking-widest">MANIFESTO_02</span>
+			<h1 class="font-sans-heavy text-4xl md:text-6xl uppercase tracking-tighter text-punk-black leading-none">
+				CHOOSE YOUR <span class="text-punk-accent">TRACK.</span>
+			</h1>
+			<p class="font-mono-clean text-sm text-punk-grey max-w-xl">
+				[EXECUTION] Three tailored photography routes designed to break you out of standard framing patterns. Small groups, maximum technical oversight, zero postcards.
+			</p>
+		</div>
+
+		<div class="grid grid-cols-1 md:grid-cols-12 gap-8 mt-12">
+			<!-- ROUTE 01 - Feature Box -->
+			<div class="md:col-span-8 border-heavy border-punk-black bg-white p-6 md:p-8 flex flex-col justify-between space-y-8">
+				<div>
+					<div class="flex justify-between items-start border-b border-punk-black pb-4">
+						<div>
+							<span class="font-mono-clean text-xs bg-punk-black text-punk-white px-2 py-0.5 font-bold">ROUTE_01</span>
+							<h2 class="font-sans-heavy text-2xl md:text-3xl uppercase tracking-tight text-punk-black mt-2">
+								EDINBURGH OLD TOWN ICONS
+							</h2>
+						</div>
+						<div class="font-mono-clean text-right">
+							<span class="text-xs text-punk-grey uppercase block">DURATION</span>
+							<span class="font-bold text-sm">120 MINS</span>
+						</div>
+					</div>
+					
+					<p class="font-mono-clean text-sm text-punk-black mt-6 leading-relaxed">
+						Subverting the classic historic grid. We bypass the tourist-clogged lookout stands to target the narrow stone closes, the sheer drops of Victoria Street, and raw geometric angles that hit harder than any pre-packaged social media filter. 
+					</p>
+					
+					<ul class="font-mono-clean text-xs text-punk-grey mt-6 space-y-2">
+						<li>// FOCUS: High-contrast street architecture & heavy shadows</li>
+						<li>// GEAR: Everything from pro DSLRs to standard smartphones welcome</li>
+						<li>// CAPACITY: Small, focused cohorts for direct 1-to-1 instruction</li>
+					</ul>
+				</div>
+
+				<div class="pt-6 border-t border-punk-black flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+					<span class="font-mono-clean text-xl font-bold text-punk-black">INVESTMENT: £50 <span class="text-xs text-punk-grey font-normal">/ PER OPERATOR</span></span>
+					<a href="/contact" class="font-mono-clean text-xs font-bold uppercase bg-punk-black text-punk-white px-4 py-2.5 hover:bg-punk-accent transition-colors tracking-wider">
+						[LOCK IN ROUTE_01]
+					</a>
+				</div>
+			</div>
+
+			<!-- SIDE PILLAR: Route Dashboard -->
+			<div class="md:col-span-4 border border-punk-black p-6 bg-punk-white flex flex-col justify-between font-mono-clean text-xs space-y-6">
+				<div>
+					<h3 class="font-sans-heavy text-xs uppercase tracking-wider text-punk-accent mb-4">// SYSTEM STATUS</h3>
+					<div class="space-y-3">
+						<div class="flex justify-between border-b border-dotted border-punk-grey pb-1">
+							<span class="text-punk-black">ROUTE_01</span>
+							<span class="text-green-6xl font-bold text-emerald-6xl">ACTIVE</span>
+						</div>
+						<div class="flex justify-between border-b border-dotted border-punk-grey pb-1 opacity-60">
+							<span class="text-punk-black">ROUTE_02 (DEAN VILLAGE)</span>
+							<span class="text-punk-accent font-bold">LAUNCHING 2026</span>
+						</div>
+						<div class="flex justify-between border-b border-dotted border-punk-grey pb-1 opacity-60">
+							<span class="text-punk-black">ROUTE_03 (GLASGOW)</span>
+							<span class="text-punk-accent font-bold">LAUNCHING 2026</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="bg-white border border-punk-black p-4 space-y-2">
+					<p class="font-bold text-punk-black uppercase">// THE AGREEMENT</p>
+					<p class="text-punk-grey text-[11px] leading-relaxed">
+						We do not provide dry history recitations. We provide immediate creative control over exposures, composition rules, and lens selection. You leave with portfolio material.
+					</p>
+				</div>
+			</div>
+		</div>
+	</main>
+</MainLayout>

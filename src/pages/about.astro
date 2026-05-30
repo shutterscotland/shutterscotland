@@ -1,0 +1,47 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="The Guide | Shutter Scotland">
+	<main class="py-12 px-6 md:px-12 max-w-5xl mx-auto">
+		<span class="font-mono-clean text-xs uppercase bg-punk-accent text-punk-white px-2 py-0.5 tracking-widest">DOSSIER_02</span>
+		
+		<h1 class="font-sans-heavy text-4xl md:text-6xl uppercase tracking-tighter text-punk-black mt-4 leading-none">
+			THE GUIDE: <span class="text-punk-accent">ALLEN ELVIN</span>
+		</h1>
+
+		<div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mt-12">
+			<!-- Text Content -->
+			<div class="md:col-span-7 font-mono-clean text-sm text-punk-black space-y-6 leading-relaxed">
+				<p class="text-base font-bold">
+					I am a photographer, a music obsessive, and a professional Glaswegian who now tracks the hidden geometry of Edinburgh. 
+				</p>
+				<p>
+					I spent decades working inside the clinical, calculated framework of corporate financial services. I know exactly how soul-crushing "bland and corporate" templates can be. Shutter Scotland was born directly to smash out of that cage. 
+				</p>
+				<p class="border-l-heavy border-punk-accent pl-4 text-punk-grey italic bg-white p-4">
+					"These walks are not a generic race between commercial landmarks, and I am not going to rattle off a list of historical textbook dates while your eyes glaze over."
+				</p>
+				<p>
+					I am here to hand you the actual creative blueprints. I focus strictly on teaching you how to read light, command your camera configurations, lock down razor-sharp perspectives, and capture the real, unvarnished texture of the capital.
+				</p>
+				<p class="text-punk-grey text-xs">
+					CURRENT EQUIPMENT STAGE: CONFIG_FUJIFILM_X // PRIME LOCKOUTS ONLY.
+				</p>
+			</div>
+
+			<!-- Visual Placeholder Block -->
+			<div class="md:col-span-5 border-heavy border-punk-black p-4 bg-white flex flex-col justify-between aspect-square md:aspect-auto">
+				<div class="font-mono-clean text-xs text-punk-grey tracking-tight">
+					[SYSTEM_IDENT_PHOTOGRAPHER]
+				</div>
+				<div class="w-full h-48 bg-punk-black my-4 overflow-hidden grayscale contrast-125">
+					<img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=600" alt="Camera Gear" class="w-full h-full object-cover" />
+				</div>
+				<div class="font-mono-clean text-xs text-punk-accent uppercase font-bold tracking-tighter text-right">
+					STATUS // OPERATIONAL_IN_EDINBURGH
+				</div>
+			</div>
+		</div>
+	</main>
+</MainLayout>

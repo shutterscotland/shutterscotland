@@ -1,0 +1,49 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Secure Track | Shutter Scotland">
+	<main class="py-12 px-6 md:px-12 max-w-4xl mx-auto">
+		<span class="font-mono-clean text-xs uppercase bg-punk-black text-punk-white px-2 py-0.5 tracking-widest">TRANSACTION_03</span>
+		
+		<h1 class="font-sans-heavy text-4xl md:text-6xl uppercase tracking-tighter text-punk-black mt-4 leading-none">
+			SECURE YOUR <span class="text-punk-accent">PERSPECTIVE.</span>
+		</h1>
+		
+		<p class="font-mono-clean text-sm text-punk-grey mt-4 max-w-xl">
+			Ready to drop the postcard look? Fill out the deployment brief below to check slot availability for individual or private group sessions.
+		</p>
+
+		<!-- Form Infrastructure -->
+		<form class="mt-12 font-mono-clean text-sm space-y-6 max-w-2xl">
+			<div class="flex flex-col space-y-2">
+				<label for="name" class="font-bold uppercase text-xs text-punk-black">01 // OPERATOR NAME *</label>
+				<input type="text" id="name" required class="bg-white border border-punk-black p-3 focus:outline-none focus:border-heavy focus:border-punk-accent text-punk-black rounded-none" placeholder="Your Name" />
+			</div>
+
+			<div class="flex flex-col space-y-2">
+				<label for="email" class="font-bold uppercase text-xs text-punk-black">02 // SECURE EMAIL CONNECTION *</label>
+				<input type="email" id="email" required class="bg-white border border-punk-black p-3 focus:outline-none focus:border-heavy focus:border-punk-accent text-punk-black rounded-none" placeholder="operator@domain.com" />
+			</div>
+
+			<div class="flex flex-col space-y-2">
+				<label for="track" class="font-bold uppercase text-xs text-punk-black">03 // TARGETED ROUTE</label>
+				<select id="track" class="bg-white border border-punk-black p-3 focus:outline-none focus:border-heavy focus:border-punk-accent text-punk-black rounded-none">
+					<option>ROUTE_01 // EDINBURGH OLD TOWN ICONS</option>
+					<option>CUSTOM PRIVACY BRIEF // ONE-TO-ONE</option>
+				</select>
+			</div>
+
+			<div class="flex flex-col space-y-2">
+				<label for="message" class="font-bold uppercase text-xs text-punk-black">04 // CREATIVE BRIEF / PREFERRED DATES</label>
+				<textarea id="message" rows="5" class="bg-white border border-punk-black p-3 focus:outline-none focus:border-heavy focus:border-punk-accent text-punk-black rounded-none" placeholder="Detail your camera gear, current experience blocks, or target booking windows..."></textarea>
+			</div>
+
+			<div class="pt-4">
+				<button type="submit" class="w-full sm:w-auto font-mono-clean text-sm font-bold uppercase border-heavy border-punk-black bg-punk-accent text-punk-white px-8 py-4 hover:bg-punk-black transition-colors tracking-widest">
+					[EXECUTE APPLICATION]
+				</button>
+			</div>
+		</form>
+	</main>
+</MainLayout>

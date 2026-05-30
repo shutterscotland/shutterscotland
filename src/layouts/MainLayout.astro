@@ -1,0 +1,58 @@
+---
+const { title = "Shutter Scotland" } = Astro.props;
+import '../styles/global.css';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script is:inline>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'punk-white': '#FAFAFA',
+              'punk-black': '#0A0A0A',
+              'punk-grey': '#737373',
+              'punk-accent': '#FF4500',
+            }
+          }
+        }
+      }
+    </script>
+	</head>
+	<body class="bg-punk-white text-punk-black selection:bg-punk-accent selection:text-punk-white antialiased min-h-screen flex flex-col">
+		
+		<header class="bg-punk-white border-b-heavy border-punk-black sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
+			<a href="/" class="font-sans-heavy text-xl md:text-2xl tracking-tighter uppercase text-punk-black hover:text-punk-accent transition-colors">
+				SHUTTER SCOTLAND
+			</a>
+			<nav class="font-mono-clean text-xs md:text-sm font-bold tracking-tight space-x-4 md:space-x-6">
+				<a href="/portfolio" class="hover:underline text-punk-black">PORTFOLIO</a>
+				<a href="/about" class="hover:underline text-punk-black">ABOUT</a>
+				<a href="/contact" class="bg-punk-black text-punk-white px-3 py-1 hover:bg-punk-accent transition-colors">CONTACT</a>
+			</nav>
+		</header>
+
+		<div class="flex-grow">
+			<slot />
+		</div>
+
+		<footer class="bg-punk-black text-punk-white font-mono-clean text-xs p-6 border-t border-punk-black flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+			<div>
+				<p class="font-bold text-punk-accent uppercase mb-1">SHUTTER SCOTLAND // VER_2026</p>
+				<p class="text-punk-grey">Stop taking snapshots. Start creating a portfolio.</p>
+			</div>
+			<div class="text-punk-grey md:text-right">
+				<p>© {new Date().getFullYear()} ALLEN ELVIN. ALL RIGHTS RESERVED.</p>
+				<p>BUILT ON THE BOTTLESHIP BLUEPRINT // POWERED BY NETLIFY</p>
+			</div>
+		</footer>
+
+	</body>
+</html>
