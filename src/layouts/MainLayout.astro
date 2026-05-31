@@ -10,21 +10,47 @@ import '../styles/global.css';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script is:inline>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              'punk-white': '#FAFAFA',
-              'punk-black': '#0A0A0A',
-              'punk-grey': '#737373',
-              'punk-accent': '#FF4500',
-            }
-          }
-        }
-      }
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+ <head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+		
+		<style is:inline>
+			/* Injecting our custom post-punk colors directly into utility classes */
+			.bg-punk-white { background-color: #FAFAFA !important; }
+			.bg-punk-black { background-color: #0A0A0A !important; }
+			.bg-punk-accent { background-color: #FF4500 !important; }
+			
+			.text-punk-black { color: #0A0A0A !important; }
+			.text-punk-grey { color: #737373 !important; }
+			.text-punk-white { color: #FAFAFA !important; }
+			.text-punk-accent { color: #FF4500 !important; }
+			
+			.border-punk-black { border-color: #0A0A0A !important; }
+			
+			/* Custom typography classes */
+			.font-sans-heavy { 
+				font-family: 'Arial Black', 'Impact', sans-serif !important; 
+			}
+			.font-mono-clean { 
+				font-family: 'Courier New', 'Courier', monospace !important; 
+			}
+			
+			/* Heavy layout borders */
+			.border-b-heavy { border-bottom-width: 3px !important; }
+			.border-heavy { border-width: 3px !important; }
+
+			/* Custom Selection Colors */
+			::selection {
+				background-color: #FF4500 !important;
+				color: #FAFAFA !important;
+			}
+		</style>
+	</head>
 	</head>
 	<body class="bg-punk-white text-punk-black selection:bg-punk-accent selection:text-punk-white antialiased min-h-screen flex flex-col">
 		
