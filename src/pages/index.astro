@@ -4,61 +4,77 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 <MainLayout title="Shutter Scotland | See Edinburgh Differently">
 	<main>
-		<!-- Hero Section Blueprint -->
-		<section class="grid grid-cols-1 md:grid-cols-12 border-b border-punk-black">
+	<section style="display: flex; flex-direction: row; flex-wrap: wrap; width: 100%; border-bottom: 3px solid #0A0A0A; overflow: hidden; background-color: #FAFAFA;">
+		
+		<div style="flex: 0 0 auto; width: 41.66%; min-width: 320px; padding: 48px; display: flex; flex-direction: column; justify-content: space-between; border-right: 3px solid #0A0A0A; box-sizing: border-box; background-color: #FAFAFA;">
 			
-			<!-- Left Pillar: The Manifesto Copy -->
-			<div class="md:col-span-5 p-6 md:p-12 flex flex-col justify-between border-b md:border-b-0 md:border-r border-punk-black">
-				<div class="space-y-6">
-					<span class="font-mono-clean text-xs uppercase bg-punk-black text-punk-white px-2 py-0.5 tracking-widest">MANIFESTO_01</span>
-					<h1 class="font-sans-heavy text-5xl md:text-7xl uppercase tracking-tighter text-punk-black leading-none">
-						SEE EDINBURGH <br><span class="text-punk-accent">DIFFERENTLY.</span>
-					</h1>
-				</div>
-				<div class="mt-12 md:mt-0">
-					<p class="font-mono-clean text-sm text-punk-grey max-w-md leading-relaxed">
-    [CONSTRAINTS] Most city tours hand you a history lecture. Most photography sites sell you a print. Shutter Scotland does something else. 
-</p>
-<p class="font-mono-clean text-sm text-punk-black font-bold max-w-md leading-relaxed mt-4">
-    We step off the beaten track, hunt down the overlooked architecture, and show you how to turn raw city texture into sharp, striking street photography. Whether you are using a DSLR or a smartphone, it is time to kill the cliché postcards.
-</p>
-					<div class="mt-8">
-						<a href="/portfolio" class="inline-block font-mono-clean text-xs font-bold uppercase border-heavy border-punk-black bg-punk-accent text-punk-white px-5 py-3 hover:bg-punk-black transition-colors tracking-wider">
-							[LOCK IN A ROUTE]
-						</a>
-					</div>
-				</div>
+			<div style="margin-bottom: 40px;">
+				<span style="font-family: 'Courier New', monospace; font-size: 12px; font-weight: bold; background-color: #0A0A0A; color: #FAFAFA; padding: 2px 8px; tracking: 0.1em;">MANIFESTO_01</span>
+				<h1 style="font-family: 'Arial Black', 'Impact', sans-serif; font-size: clamp(2.5rem, 4vw, 4.5rem); text-transform: uppercase; line-height: 0.9; letter-spacing: -0.05em; color: #0A0A0A; margin-top: 24px; margin-bottom: 0;">
+					SEE EDINBURGH <br><span style="color: #FF4500;">DIFFERENTLY.</span>
+				</h1>
 			</div>
 			
-			<!-- Right Pillar: Massive Hero Space -->
-			<div class="md:col-span-7 bg-punk-black relative group aspect-[4/3] md:aspect-auto min-h-[400px] md:min-h-0">
-				<div class="absolute inset-0 bg-punk-grey opacity-20 group-hover:opacity-0 transition-opacity duration-500 z-10"></div>
-				<img 
-					src="https://images.unsplash.com/photo-1605538032432-a9f0c8d9baac?auto=format&fit=crop&q=80&w=1200" 
-					alt="Gritty Architectural Shadows" 
-					class="w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700"
-				/>
-				<div class="absolute bottom-4 right-4 bg-punk-black border border-punk-white text-punk-white font-mono-clean text-[10px] uppercase px-2 py-1 z-20 tracking-widest opacity-80">
-					LOC_EDINBURGH_OLD_TOWN
-				</div>
+			<div style="margin-bottom: 40px;">
+				<p style="font-family: 'Courier New', monospace; font-size: 14px; color: #3F3F46; line-height: 1.6; max-width: 440px; border-left: 3px solid #FF4500; padding-left: 16px; margin: 0 0 16px 0;">
+					Most city tours are just history lectures in disguise. Most photography sites just want to sell you a print. Shutter Scotland is the bridge between the two. 
+				</p>
+				<p style="font-family: 'Courier New', monospace; font-size: 14px; color: #0A0A0A; font-weight: bold; line-height: 1.6; max-width: 440px; margin: 0;">
+					We trade the crowded viewpoints for raw urban geometry and brutalist horizons. Whether you're shooting on a flagship DSLR or a smartphone, I’ll show you how to strip away the "postcard" noise and capture the city’s actual pulse.
+				</p>
 			</div>
+			
+			<div style="padding-bottom: 12px;">
+	<a href="/portfolio" class="brutalist-cta-btn" style="display: inline-block; font-family: 'Courier New', monospace; font-size: 13px; font-weight: bold; text-transform: uppercase; text-decoration: none; border: 3px solid #0A0A0A; background-color: #FF4500; color: #FAFAFA; padding: 14px 28px; letter-spacing: 0.05em; box-shadow: 4px 4px 0px 0px #0A0A0A;">
+		[LOCK IN A ROUTE]
+	</a>
+</div>
+		</div>
+		
+		<div style="flex: 1 1 0%; min-width: 320px; min-height: 550px; background-color: #0A0A0A; relative; position: relative; box-sizing: border-box;">
+			<img 
+				src="/images/royal-mile-street-image.jpg" 
+				alt="Black and white street photography of Edinburgh Royal Mile through a stone archway" 
+				style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: contrast(1.15);"
+			/>
+			<div style="position: absolute; bottom: 16px; right: 16px; background-color: #0A0A0A; border: 1px solid #FAFAFA; color: #FAFAFA; font-family: 'Courier New', monospace; font-size: 10px; text-transform: uppercase; padding: 4px 8px; letter-spacing: 0.1em; opacity: 0.8; z-index: 20;">
+				LOC_EDINBURGH_ROYAL_MILE
+			</div>
+		</div>
 
-		</section>
+	</section>
 
-		<!-- Sub-Hero Tactical Split: The SB7 Promise -->
 		<section class="grid grid-cols-1 md:grid-cols-3 font-mono-clean text-sm border-b border-punk-black">
-			<div class="p-6 md:p-8 border-b md:border-b-0 md:border-r border-punk-black space-y-3">
-				<h3 class="font-sans-heavy text-lg uppercase tracking-tight text-punk-black">01 // COMMAND YOUR CAMERA</h3>
-				<p class="text-punk-grey">Ditch the auto mode framework. Take complete mathematical and creative control over exposure, depth, and structural dynamics.</p>
+			<div class="p-6 md:p-8 border-b md:border-b-0 md:border-r border-punk-black space-y-3 hover:bg-punk-accent hover:text-punk-white transition-all duration-300 group">
+				<h3 class="font-sans-heavy text-lg uppercase tracking-tight text-punk-black group-hover:text-punk-white">01 // COMMAND YOUR CAMERA</h3>
+				<p class="text-punk-grey group-hover:text-punk-white/90">Ditch the auto mode framework. Take complete mathematical and creative control over exposure, depth, and structural dynamics.</p>
 			</div>
-			<div class="p-6 md:p-8 border-b md:border-b-0 md:border-r border-punk-black space-y-3">
-				<h3 class="font-sans-heavy text-lg uppercase tracking-tight text-punk-black">02 // HUNT THE SHADOWS</h3>
-				<p class="text-punk-grey">Learn to read urban geometry. We bypass the crowded lookout spots to target raw textures, brutal horizons, and slick contrasts.</p>
+			<div class="p-6 md:p-8 border-b md:border-b-0 md:border-r border-punk-black space-y-3 hover:bg-punk-accent hover:text-punk-white transition-all duration-300 group">
+				<h3 class="font-sans-heavy text-lg uppercase tracking-tight text-punk-black group-hover:text-punk-white">02 // HUNT THE SHADOWS</h3>
+				<p class="text-punk-grey group-hover:text-punk-white/90">Learn to read urban geometry. We bypass the crowded lookout spots to target raw textures, brutal horizons, and slick contrasts.</p>
 			</div>
-			<div class="p-6 md:p-8 space-y-3">
-				<h3 class="font-sans-heavy text-lg uppercase tracking-tight text-punk-black">03 // OWN THE ARTWORK</h3>
-				<p class="text-punk-grey">Stop filling your phone storage with digital noise. Finish the walk with custom-framed, gallery-grade captures that look distinctively yours.</p>
+			<div class="p-6 md:p-8 space-y-3 hover:bg-punk-accent hover:text-punk-white transition-all duration-300 group">
+				<h3 class="font-sans-heavy text-lg uppercase tracking-tight text-punk-black group-hover:text-punk-white">03 // OWN THE ARTWORK</h3>
+				<p class="text-punk-grey group-hover:text-punk-white/90">Stop filling your phone storage with digital noise. Finish the walk with custom-framed, gallery-grade captures that look distinctively yours.</p>
 			</div>
 		</section>
 	</main>
 </MainLayout>
+<style>
+	/* Targeting our custom inline-styled CTA button */
+	.brutalist-cta-btn {
+		transition: all 0.2s ease-in-out !important;
+	}
+
+	.brutalist-cta-btn:hover {
+		background-color: #0A0A0A !important;
+		color: #FF4500 !important;
+		border-color: #FF4500 !important;
+		box-shadow: 0px 0px 0px 0px #0A0A0A !important;
+		transform: translate(4px, 4px) !important;
+	}
+	
+	.brutalist-cta-btn:active {
+		transform: scale(0.98) !important;
+	}
+</style>
