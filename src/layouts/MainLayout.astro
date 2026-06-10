@@ -63,16 +63,53 @@ import '../styles/global.css';
 			<slot />
 		</div>
 
-		<footer class="bg-punk-black text-punk-white font-mono-clean text-xs p-6 border-t border-punk-black flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-			<div>
-				<p class="font-bold text-punk-accent uppercase mb-1">SHUTTER SCOTLAND // VER_2026</p>
-				<p class="text-punk-grey">Stop taking snapshots. Start creating a portfolio.</p>
+		<footer style="width: 100%; background-color: #0A0A0A; color: #FAFAFA; padding: 64px 48px 32px 48px; box-sizing: border-box; border-top: 6px solid #0A0A0A;">
+	
+	<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; gap: 40px; margin-bottom: 64px; width: 100%;">
+		
+		<div style="flex: 1 1 300px;">
+			<h2 style="font-family: 'Arial Black', 'Impact', sans-serif; font-size: 24px; text-transform: uppercase; color: #FAFAFA; margin: 0 0 12px 0; letter-spacing: -0.02em;">
+				SHUTTER <span style="color: #FF4500;">SCOTLAND.</span>
+			</h2>
+			<p style="font-family: 'Courier New', monospace; font-size: 12px; color: #A1A1AA; max-width: 280px; line-height: 1.6; margin: 0 0 24px 0;">
+				An alternative Edinburgh guided photography walk. Looking past the postcards to capture the raw architecture and geometry of the city.
+			</p>
+			
+			<div style="margin-top: 16px;">
+				<span style="font-family: 'Courier New', monospace; font-size: 10px; color: #71717A; display: block; margin-bottom: 4px;">// VERIFIED LOCAL OPERATOR</span>
+				<a href="https://share.google/QqpS9zLKHD4L9zoBR" target="_blank" style="display: inline-block; font-family: 'Courier New', monospace; font-size: 11px; font-weight: bold; color: #FF4500; text-decoration: none; border: 1px solid #FF4500; padding: 6px 12px; uppercase;">
+					[ VIEW ON GOOGLE MAPS ]
+				</a>
 			</div>
-			<div class="text-punk-grey md:text-right">
-				<p>© {new Date().getFullYear()} ALLEN ELVIN. ALL RIGHTS RESERVED.</p>
-				<p>BUILT ON THE BOTTLESHIP BLUEPRINT // POWERED BY NETLIFY</p>
+		</div>
+
+		<div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 48px;">
+			<div style="display: flex; flex-direction: column; gap: 12px;">
+				<span style="font-family: 'Courier New', monospace; font-size: 11px; font-weight: bold; color: #FF4500; text-transform: uppercase; letter-spacing: 0.1em;">// NAV</span>
+				<a href="/portfolio" style="font-family: 'Courier New', monospace; font-size: 13px; color: #FAFAFA; text-decoration: none;">PORTFOLIO</a>
+				<a href="/about" style="font-family: 'Courier New', monospace; font-size: 13px; color: #FAFAFA; text-decoration: none;">ABOUT</a>
+				<a href="/contact" style="font-family: 'Courier New', monospace; font-size: 13px; color: #FAFAFA; text-decoration: none;">CONTACT</a>
 			</div>
-		</footer>
+			
+			<div style="display: flex; flex-direction: column; gap: 12px;">
+				<span style="font-family: 'Courier New', monospace; font-size: 11px; font-weight: bold; color: #FF4500; text-transform: uppercase; letter-spacing: 0.1em;">// LEGAL</span>
+				<a href="/privacy" style="font-family: 'Courier New', monospace; font-size: 13px; color: #A1A1AA; text-decoration: none;">PRIVACY POLICY</a>
+				<a href="/terms" style="font-family: 'Courier New', monospace; font-size: 13px; color: #A1A1AA; text-decoration: none;">TERMS & CONDITIONS</a>
+			</div>
+		</div>
+
+	</div>
+
+	<div style="width: 100%; border-top: 1px solid #27272A; padding-top: 24px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-family: 'Courier New', monospace; font-size: 11px; color: #71717A;">
+		<div>
+			© 2026 SHUTTER SCOTLAND. ALL RIGHTS RESERVED.
+		</div>
+		<div>
+			CODE BASE: ASTRO STATIC // BRAND BY <a href="#" style="color: #FF4500; text-decoration: none; font-weight: bold;">BOTTLESHIP</a>
+		</div>
+	</div>
+
+</footer>
 
 	</body>
 </html>
