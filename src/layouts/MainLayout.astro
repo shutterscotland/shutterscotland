@@ -4,112 +4,106 @@ import '../styles/global.css';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		
-		<script src="https://cdn.tailwindcss.com"></script>
-		
-		<style is:inline>
-			/* Injecting our custom post-punk colors directly into utility classes */
-			.bg-punk-white { background-color: #FAFAFA !important; }
-			.bg-punk-black { background-color: #0A0A0A !important; }
-			.bg-punk-accent { background-color: #FF4500 !important; }
-			
-			.text-punk-black { color: #0A0A0A !important; }
-			.text-punk-grey { color: #737373 !important; }
-			.text-punk-white { color: #FAFAFA !important; }
-			.text-punk-accent { color: #FF4500 !important; }
-			
-			.border-punk-black { border-color: #0A0A0A !important; }
-			
-			/* Custom typography classes */
-			.font-sans-heavy { 
-				font-family: 'Arial Black', 'Impact', sans-serif !important; 
-			}
-			.font-mono-clean { 
-				font-family: 'Courier New', 'Courier', monospace !important; 
-			}
-			
-			/* Heavy layout borders */
-			.border-b-heavy { border-bottom-width: 3px !important; }
-			.border-heavy { border-width: 3px !important; }
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+        
+        <script is:inline src="https://cdn.tailwindcss.com"></script>
+        
+        <style is:inline>
+            /* Injecting our custom post-punk colors directly into utility classes */
+            .bg-punk-white { background-color: #FAFAFA !important; }
+            .bg-punk-black { background-color: #0A0A0A !important; }
+            .bg-punk-accent { background-color: #FF4500 !important; }
+            
+            .text-punk-black { color: #0A0A0A !important; }
+            .text-punk-grey { color: #737373 !important; }
+            .text-punk-white { color: #FAFAFA !important; }
+            .text-punk-accent { color: #FF4500 !important; }
+            
+            .border-punk-black { border-color: #0A0A0A !important; }
+            
+            /* Custom typography classes */
+            .font-sans-heavy { 
+                font-family: 'Arial Black', 'Impact', sans-serif !important; 
+            }
+            .font-mono-clean { 
+                font-family: 'Courier New', 'Courier', monospace !important; 
+            }
+            
+            /* Heavy layout borders */
+            .border-b-heavy { border-bottom-width: 3px !important; }
+            .border-heavy { border-width: 3px !important; }
 
-			/* Custom Selection Colors */
-			::selection {
-				background-color: #FF4500 !important;
-				color: #FAFAFA !important;
-			}
-		</style>
-	</head>
-	
-	<body class="bg-punk-white text-punk-black selection:bg-punk-accent selection:text-punk-white antialiased min-h-screen flex flex-col">
-		
-		<header class="bg-punk-white border-b-heavy border-punk-black sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
-			<a href="/">
-				<img src="/images/logo.svg" alt="Shutter Scotland Logo" class="h-16 w-auto" style="height: 64px; width: auto; display: block;">
-			</a>
-			<nav class="font-mono-clean text-xs md:text-sm font-bold tracking-tight space-x-4 md:space-x-6">
-				<a href="/portfolio" class="hover:underline text-punk-black">PORTFOLIO</a>
-				<a href="/about" class="hover:underline text-punk-black">ABOUT</a>
-				<a href="/contact" class="bg-punk-black text-punk-white px-3 py-1 hover:bg-punk-accent transition-colors">CONTACT</a>
-			</nav>
-		</header>
+            /* Custom Selection Colors */
+            ::selection {
+                background-color: #FF4500 !important;
+                color: #FAFAFA !important;
+            }
+        </style>
+    </head>
+    
+    <body class="bg-punk-white text-punk-black selection:bg-punk-accent selection:text-punk-white antialiased min-h-screen flex flex-col">
+        
+        <header class="bg-punk-white border-b-heavy border-punk-black sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
+            <a href="/">
+                <img src="/images/logo.svg" alt="Shutter Scotland Logo" class="h-16 w-auto" style="height: 64px; width: auto; display: block;">
+            </a>
+            <nav class="font-mono-clean text-xs md:text-sm font-bold tracking-tight space-x-4 md:space-x-6">
+                <a href="/portfolio" class="hover:underline text-punk-black">PORTFOLIO</a>
+                <a href="/about" class="hover:underline text-punk-black">ABOUT</a>
+                <a href="/contact" class="bg-punk-black text-punk-white px-3 py-1 hover:bg-punk-accent transition-colors">CONTACT</a>
+            </nav>
+        </header>
 
-		<div class="flex-grow">
-			<slot />
-		</div>
+        <div class="flex-grow">
+            <slot />
+        </div>
 
-		<footer style="width: 100%; background-color: #0A0A0A; color: #FAFAFA; padding: 64px 48px 32px 48px; box-sizing: border-box; border-top: 6px solid #0A0A0A;">
-	
-	<div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; gap: 40px; margin-bottom: 64px; width: 100%;">
-		
-		<div style="flex: 1 1 300px;">
-			<h2 style="font-family: 'Arial Black', 'Impact', sans-serif; font-size: 24px; text-transform: uppercase; color: #FAFAFA; margin: 0 0 12px 0; letter-spacing: -0.02em;">
-				SHUTTER <span style="color: #FF4500;">SCOTLAND.</span>
-			</h2>
-			<p style="font-family: 'Courier New', monospace; font-size: 12px; color: #A1A1AA; max-width: 280px; line-height: 1.6; margin: 0 0 24px 0;">
-				An alternative Edinburgh guided photography walk. Looking past the postcards to capture the raw architecture and geometry of the city.
-			</p>
-			
-			<div style="margin-top: 16px;">
-				<span style="font-family: 'Courier New', monospace; font-size: 10px; color: #71717A; display: block; margin-bottom: 4px;">// VERIFIED LOCAL OPERATOR</span>
-				<a href="https://share.google/QqpS9zLKHD4L9zoBR" target="_blank" style="display: inline-block; font-family: 'Courier New', monospace; font-size: 11px; font-weight: bold; color: #FF4500; text-decoration: none; border: 1px solid #FF4500; padding: 6px 12px; uppercase;">
-					[ VIEW ON GOOGLE MAPS ]
-				</a>
-			</div>
-		</div>
+        <footer style="width: 100%; background-color: #0A0A0A; color: #FAFAFA; padding: 64px 48px 32px 48px; box-sizing: border-box; border-top: 6px solid #0A0A0A;">
+            <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; gap: 40px; margin-bottom: 64px; width: 100%;">
+                <div style="flex: 1 1 300px;">
+                    <h2 style="font-family: 'Arial Black', 'Impact', sans-serif; font-size: 24px; text-transform: uppercase; color: #FAFAFA; margin: 0 0 12px 0; letter-spacing: -0.02em;">
+                        SHUTTER <span style="color: #FF4500;">SCOTLAND.</span>
+                    </h2>
+                    <p style="font-family: 'Courier New', monospace; font-size: 12px; color: #A1A1AA; max-width: 280px; line-height: 1.6; margin: 0 0 24px 0;">
+                        An alternative Edinburgh guided photography walk. Looking past the postcards to capture the raw architecture and geometry of the city.
+                    </p>
+                    <div style="margin-top: 16px;">
+                        <span style="font-family: 'Courier New', monospace; font-size: 10px; color: #71717A; display: block; margin-bottom: 4px;">// VERIFIED LOCAL OPERATOR</span>
+                        <a href="https://share.google/QqpS9zLKHD4L9zoBR" target="_blank" style="display: inline-block; font-family: 'Courier New', monospace; font-size: 11px; font-weight: bold; color: #FF4500; text-decoration: none; border: 1px solid #FF4500; padding: 6px 12px; uppercase;">
+                            [ VIEW ON GOOGLE MAPS ]
+                </a>
+                    </div>
+                </div>
 
-		<div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 48px;">
-			<div style="display: flex; flex-direction: column; gap: 12px;">
-				<span style="font-family: 'Courier New', monospace; font-size: 11px; font-weight: bold; color: #FF4500; text-transform: uppercase; letter-spacing: 0.1em;">// NAV</span>
-				<a href="/portfolio" style="font-family: 'Courier New', monospace; font-size: 13px; color: #FAFAFA; text-decoration: none;">PORTFOLIO</a>
-				<a href="/about" style="font-family: 'Courier New', monospace; font-size: 13px; color: #FAFAFA; text-decoration: none;">ABOUT</a>
-				<a href="/contact" style="font-family: 'Courier New', monospace; font-size: 13px; color: #FAFAFA; text-decoration: none;">CONTACT</a>
-			</div>
-			
-			<div style="display: flex; flex-direction: column; gap: 12px;">
-				<span style="font-family: 'Courier New', monospace; font-size: 11px; font-weight: bold; color: #FF4500; text-transform: uppercase; letter-spacing: 0.1em;">// LEGAL</span>
-				<a href="/privacy" style="font-family: 'Courier New', monospace; font-size: 13px; color: #A1A1AA; text-decoration: none;">PRIVACY POLICY</a>
-				<a href="/terms" style="font-family: 'Courier New', monospace; font-size: 13px; color: #A1A1AA; text-decoration: none;">TERMS & CONDITIONS</a>
-			</div>
-		</div>
+                <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 48px;">
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <span style="font-family: 'Courier New', monospace; font-size: 11px; font-weight: bold; color: #FF4500; text-transform: uppercase; letter-spacing: 0.1em;">// NAV</span>
+                        <a href="/portfolio" style="font-family: 'Courier New', monospace; font-size: 13px; color: #FAFAFA; text-decoration: none;">PORTFOLIO</a>
+                        <a href="/about" style="font-family: 'Courier New', monospace; font-size: 13px; color: #FAFAFA; text-decoration: none;">ABOUT</a>
+                        <a href="/contact" style="font-family: 'Courier New', monospace; font-size: 13px; color: #FAFAFA; text-decoration: none;">CONTACT</a>
+                    </div>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <span style="font-family: 'Courier New', monospace; font-size: 11px; font-weight: bold; color: #FF4500; text-transform: uppercase; letter-spacing: 0.1em;">// LEGAL</span>
+                        <a href="/privacy" style="font-family: 'Courier New', monospace; font-size: 13px; color: #A1A1AA; text-decoration: none;">PRIVACY POLICY</a>
+                        <a href="/terms" style="font-family: 'Courier New', monospace; font-size: 13px; color: #A1A1AA; text-decoration: none;">TERMS & CONDITIONS</a>
+                    </div>
+                </div>
+            </div>
 
-	</div>
-
-	<div style="width: 100%; border-top: 1px solid #27272A; padding-top: 24px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-family: 'Courier New', monospace; font-size: 11px; color: #71717A;">
-		<div>
-			© 2026 SHUTTER SCOTLAND. ALL RIGHTS RESERVED.
-		</div>
-		<div>
-			CODE BASE: ASTRO STATIC // BRAND BY <a href="#" style="color: #FF4500; text-decoration: none; font-weight: bold;">BOTTLESHIP</a>
-		</div>
-	</div>
-
-</footer>
-
-	</body>
+            <div style="width: 100%; border-top: 1px solid #27272A; padding-top: 24px; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-family: 'Courier New', monospace; font-size: 11px; color: #71717A;">
+                <div>
+                    © 2026 SHUTTER SCOTLAND. ALL RIGHTS RESERVED.
+                </div>
+                <div>
+                    CODE BASE: ASTRO STATIC // BRAND BY <a href="#" style="color: #FF4500; text-decoration: none; font-weight: bold;">BOTTLESHIP</a>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>

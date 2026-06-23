@@ -1,0 +1,179 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Framing the Old Town | Edinburgh Creative Photography Walk">
+  <!-- This inline block overrides the layout's default white background specifically for this tour page -->
+  <style is:inline>
+    body {
+      background-color: #0A0A0A !important;
+      color: #FAFAFA !important;
+    }
+    header {
+      background-color: #0A0A0A !important;
+      border-bottom-color: #27272A !important;
+    }
+    header a, header nav a {
+      color: #FAFAFA !important;
+    }
+    header nav a.bg-punk-black {
+      background-color: #FAFAFA !important;
+      color: #0A0A0A !important;
+    }
+  </style>
+
+  <!-- Added top padding (pt-24) to cleanly offset and clear the sticky navigation layout layer -->
+  <div class="w-full bg-zinc-950 text-zinc-100 min-h-screen selection:bg-punk-accent selection:text-white">
+    <main class="max-w-4xl mx-auto px-6 pt-24 pb-16 font-sans">
+      
+      <!-- Hero Header -->
+      <header class="mb-16 border-b border-zinc-800 pb-12 bg-transparent">
+        <span class="font-mono text-xs uppercase tracking-widest text-punk-accent block mb-3">// Flagship Workshop</span>
+        <h1 class="text-4xl md:text-6xl font-extrabold uppercase tracking-tight mb-6 text-white">
+          Framing the Old Town
+        </h1>
+        <p class="text-xl text-zinc-300 leading-relaxed max-w-2xl">
+          See Edinburgh differently — without getting bogged down in complex camera settings[cite: 1].
+        </p>
+        
+        <!-- Quick Details Badge Panel -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 font-mono text-xs uppercase tracking-wider border border-zinc-800 p-4 bg-zinc-900/20">
+          <div><span class="text-zinc-500 block">Start:</span> Lady Stair's Close[cite: 1]</div>
+          <div><span class="text-zinc-500 block">Duration:</span> ~2 Hours</div>
+          <div><span class="text-zinc-500 block">Capacity:</span> Max 8 People</div>
+          <div><span class="text-zinc-500 block">Price:</span> From £50</div>
+        </div>
+      </header>
+
+      <!-- Core Philosophy / Re-framing -->
+      <section class="mb-16 grid grid-cols-1 md:grid-cols-2 gap-8 border-b border-zinc-800 pb-16">
+        <div>
+          <h2 class="font-mono text-xs uppercase tracking-wider text-white mb-4">// The Concept</h2>
+          <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+            Most tours hand you an endless list of historic dates. Most photographers hand you a print. This walk sits right in the middle[cite: 1]. 
+          </p>
+          <p class="text-zinc-300 text-sm leading-relaxed">
+            We'll explore some of Edinburgh's most atmospheric spots, but instead of focusing on technical considerations, we use creative composition to unlock fresh perspectives of the city[cite: 1]. 
+          </p>
+        </div>
+        <div class="bg-zinc-900/40 p-6 border border-zinc-800 font-mono text-xs space-y-3">
+          <div class="text-white uppercase font-bold tracking-widest mb-2">// Skill Level: Open to All</div>
+          <p class="text-zinc-400 leading-relaxed">
+            Whether you're packing a high-end mirrorless setup, a vintage DSLR, or just the smartphone in your pocket, the rules of perspective apply across the board[cite: 1]. No gear gatekeeping here[cite: 1].
+          </p>
+        </div>
+      </section>
+
+      <!-- The Itinerary Timeline -->
+      <section class="mb-16">
+        <h2 class="font-mono text-xs uppercase tracking-wider text-white border-b border-zinc-800 pb-4 mb-12">
+          // The Route Blueprint
+        </h2>
+        
+        <div class="space-y-16 border-l border-zinc-800 pl-6 ml-2 relative">
+
+          <!-- STOP 1 -->
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1.5 w-2 h-2 bg-white rounded-full"></div>
+            <span class="font-mono text-[11px] uppercase tracking-widest text-zinc-500 block mb-1">Stop 01 // Composition</span>
+            <h3 class="text-xl font-bold uppercase tracking-tight text-white mb-4">Makars' Court & The Writers' Museum</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-zinc-300">
+              <p class="leading-relaxed">Tucked right off the Royal Mile, this quiet literary courtyard is engraved with the words of Scotland's giants[cite: 1]. We'll use the unique turret of the Writers' Museum as a primary subject, learning how to select a clear visual anchor in a visually busy environment[cite: 1].</p>
+              <div class="bg-zinc-900/50 p-4 border border-zinc-800/80 font-sans">
+                <span class="font-mono text-xs uppercase tracking-wider text-white block mb-1">Creative Focus: Visual Balance</span>
+                <p class="text-zinc-400 text-xs leading-relaxed">We'll practice stepping slightly right to realign a historic lamppost with the stone turret, building a balanced frame where a secondary element completely anchors the image[cite: 1].</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- STOP 2 -->
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1.5 w-2 h-2 bg-white rounded-full"></div>
+            <span class="font-mono text-[11px] uppercase tracking-widest text-zinc-500 block mb-1">Stop 02 // Lighting</span>
+            <h3 class="text-xl font-bold uppercase tracking-tight text-white mb-4">Gladstone's Land & The Lawnmarket</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-zinc-300">
+              <p class="leading-relaxed">A stunning look at a 17th-century merchant house[cite: 1]. These narrow, towering stone passages cast dramatic shadows across the Old Town pavements, providing the perfect playground for framing heavy contrasts[cite: 1].</p>
+              <div class="bg-zinc-900/50 p-4 border border-zinc-800/80 font-sans">
+                <span class="font-mono text-xs uppercase tracking-wider text-white block mb-1">Creative Focus: Creating a Stage</span>
+                <p class="text-zinc-400 text-xs leading-relaxed mb-2">We'll utilize the heavy shadows as negative space, lock our composition on a bright shaft of sunlight hitting the street, and wait for human elements to walk straight into our frame[cite: 1].</p>
+                <span class="font-mono text-[10px] text-zinc-500 block">Setup: Shutter 1/200 sec (Smartphone: tap the light zone to expose correctly)[cite: 1]</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- STOP 3 -->
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1.5 w-2 h-2 bg-white rounded-full"></div>
+            <span class="font-mono text-[11px] uppercase tracking-widest text-zinc-500 block mb-1">Stop 03 // Geometry</span>
+            <h3 class="text-xl font-bold uppercase tracking-tight text-white mb-4">Victoria Street & The Terrace</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-zinc-300">
+              <p class="leading-relaxed">Famously magical and deeply vibrant, this multi-level curved masterpiece is often snapped directly from the bottom[cite: 1]. We'll head up to the terrace to completely shift our vertical perspective[cite: 1].</p>
+              <div class="bg-zinc-900/50 p-4 border border-zinc-800/80 font-sans">
+                <span class="font-mono text-xs uppercase tracking-wider text-white block mb-1">Creative Focus: Leading Lines & Color</span>
+                <p class="text-zinc-400 text-xs leading-relaxed">We will track the powerful sweeping line of the cobblestone curve to pull the viewer's eyes through the image, while experimenting with abstract reflections in the storefront glass[cite: 1].</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- STOP 4 -->
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1.5 w-2 h-2 bg-white rounded-full"></div>
+            <span class="font-mono text-[11px] uppercase tracking-widest text-zinc-500 block mb-1">Stop 04 // Street Style</span>
+            <h3 class="text-xl font-bold uppercase tracking-tight text-white mb-4">The Grassmarket</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-zinc-300">
+              <p class="leading-relaxed">Once a buzzing medieval livestock market and execution square, it's now a massive public stage where the modern life of Edinburgh plays out[cite: 1]. This is where we transition fully into street photography[cite: 1].</p>
+              <div class="bg-zinc-900/50 p-4 border border-zinc-800/80 font-sans">
+                <span class="font-mono text-xs uppercase tracking-wider text-white block mb-1">Creative Focus: Story Moments</span>
+                <p class="text-zinc-400 text-xs leading-relaxed mb-2">Capturing life as it happens requires observation and confidence[cite: 1]. We will handle tips on shooting from the hip, anticipating timing, and legalities of public capturing in the UK[cite: 1].</p>
+                <span class="font-mono text-[10px] text-zinc-500 block">Setup: f/8 & be there (Shutter 1/200 sec, allow your ISO to climb for character)[cite: 1]</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- STOP 5 -->
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1.5 w-2 h-2 bg-white rounded-full"></div>
+            <span class="font-mono text-[11px] uppercase tracking-widest text-zinc-500 block mb-1">Stop 05 // Framing</span>
+            <h3 class="text-xl font-bold uppercase tracking-tight text-white mb-4">The Vennel Viewpoint</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-zinc-300">
+              <p class="leading-relaxed">We climb the boundary of the historic 1513 Flodden Wall[cite: 1]. This spot serves up one of the most stunning, dramatic views of Edinburgh Castle looming over the cityscape[cite: 1].</p>
+              <div class="bg-zinc-900/50 p-4 border border-zinc-800/80 font-sans">
+                <span class="font-mono text-xs uppercase tracking-wider text-white block mb-1">Creative Focus: Physical Trapping</span>
+                <p class="text-zinc-400 text-xs leading-relaxed">Unlike utilizing the dynamic light patterns at Gladstone's Land, here we will practice framing with cold physical elements — using stone gaps in the ancient wall to literally "trap" the castle[cite: 1].</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- STOP 6 -->
+          <div class="relative">
+            <div class="absolute -left-[31px] top-1.5 w-2 h-2 bg-white rounded-full"></div>
+            <span class="font-mono text-[11px] uppercase tracking-widest text-zinc-500 block mb-1">Stop 06 // Mood & Texture</span>
+            <h3 class="text-xl font-bold uppercase tracking-tight text-white mb-4">Greyfriars Kirkyard</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-zinc-300">
+              <p class="leading-relaxed">Dating back to the 1560s, this is one of the most atmospheric and politically charged graveyards in Scotland[cite: 1]. A deep history of rebels, loyalty, and literary inspirations carved directly into stone[cite: 1].</p>
+              <div class="bg-zinc-900/50 p-4 border border-zinc-800/80 font-sans">
+                <span class="font-mono text-xs uppercase tracking-wider text-white block mb-1">Creative Focus: Depth of Field Focus</span>
+                <p class="text-zinc-400 text-xs leading-relaxed mb-2">We will isolate a single gravestone by using a wide aperture to throw the chaotic backgrounds entirely out of focus[cite: 1]. We'll also shoot the intersection where nature reclaims weathered stone[cite: 1].</p>
+                <span class="font-mono text-[10px] text-zinc-500 block">Setup: f/2.8 - f/4 (Smartphone: use Portrait mode or step in close)[cite: 1]</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="border-t border-zinc-800 pt-12 text-center">
+        <h2 class="text-2xl font-bold uppercase tracking-tight mb-4 text-white">Ready to Capture Scotland Differently?</h2>
+        <p class="text-zinc-400 text-sm max-w-md mx-auto mb-8 font-sans">
+          Tours run year-round, rain or shine. Secure your spot on our next walk and turn your trip into a portfolio.
+        </p>
+        
+        <a href="/contact" class="inline-block bg-white text-black font-mono uppercase tracking-wider text-xs font-bold py-4 px-8 border-2 border-white hover:bg-transparent hover:text-white transition-all duration-200">
+  Book This Photo Walk
+</a>
+      </section>
+
+    </main>
+  </div>
+</MainLayout>
