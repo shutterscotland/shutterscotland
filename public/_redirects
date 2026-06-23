@@ -1,0 +1,4 @@
+# Shutter Scotland URL Mapping Engine
+/blog               /portfolio              301
+/glasgow-walks      /portfolio              301
+/edinburgh-walks    /tours/edinburgh        301
