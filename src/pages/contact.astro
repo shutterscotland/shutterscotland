@@ -2,76 +2,63 @@
 import MainLayout from '../layouts/MainLayout.astro';
 ---
 
-<MainLayout title="Shutter Scotland | Connect & Book">
-	<main style="background-color: #FAFAFA; min-height: 80vh;">
-		
-		<!-- Split Hero / Form Section -->
-		<section style="display: flex; flex-direction: row; flex-wrap: wrap; width: 100%; border-bottom: 3px solid #0A0A0A; overflow: hidden;">
-			
-			<!-- Left Column: The Attitude / Info -->
-			<div style="flex: 1 1 40%; min-width: 320px; padding: 48px; background-color: #0A0A0A; color: #FAFAFA; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box; border-right: 3px solid #0A0A0A;">
-				<div>
-					<span style="font-family: 'Courier New', monospace; font-size: 12px; font-weight: bold; color: #FF4500; letter-spacing: 0.1em; text-transform: uppercase;">COMMS_04 // SECURE A SLOT</span>
-					<h1 style="font-family: 'Arial Black', 'Impact', sans-serif; font-size: clamp(2rem, 3.5vw, 4rem); text-transform: uppercase; line-height: 0.95; letter-spacing: -0.04em; margin-top: 24px; margin-bottom: 24px;">
-						LAUNCH A <br><span style="color: #FF4500;">REQUEST.</span>
-					</h1>
-					<p style="font-family: 'Courier New', monospace; font-size: 14px; color: #A1A1AA; line-height: 1.6; max-width: 400px; margin: 0 0 24px 0;">
-						Tours run daily but group sizes are strictly limited to keep the training focused. Drop your details here to request a specific date. 
-					</p>
-					<p style="font-family: 'Courier New', monospace; font-size: 13px; color: #71717A; line-height: 1.6; max-width: 400px; margin: 0;">
-						<strong style="color: #FAFAFA;">Beyonk Integration Note:</strong> Once our account onboarding is finalized, this manual intake form will be replaced instantly by the live booking grid overlay.
-					</p>
-				</div>
+<MainLayout title="Book a Route // Shutter Scotland">
+    <main class="min-h-screen bg-punk-white py-16 px-6 sm:px-12">
+        <div class="max-w-4xl mx-auto">
+            
+            <div class="border-heavy border-punk-black bg-punk-black text-punk-white p-8 mb-12 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                <span class="font-mono-clean text-xs text-punk-accent tracking-widest block mb-2">// LIVE OPERATIONS // SYSTEM ENTRY</span>
+                <h1 class="font-sans-heavy text-4xl sm:text-5xl uppercase tracking-tight mb-4">
+                    SECURE YOUR <span class="text-punk-accent">TRACK ACCESS</span>
+                </h1>
+                <p class="font-mono-clean text-sm text-zinc-400 max-w-2xl leading-relaxed">
+                    Select a date below to join Route 01: Framing the Old Town. Cohorts are strictly limited to a maximum of 8 operators to maintain visual isolation and focused creative tuition. No gear gatekeeping.
+                </p>
+            </div>
 
-				<div style="padding-top: 40px; font-family: 'Courier New', monospace; font-size: 12px; color: #71717A;">
-					LOC_EDINBURGH_OLD_TOWN // SCOTLAND
-				</div>
-			</div>
+            <div class="border-heavy border-punk-black bg-punk-white p-4 sm:p-8 relative shadow-[6px_6px_0px_0px_rgba(255,69,0,1)] mb-8">
+                <span class="font-mono-clean text-[10px] text-zinc-500 block mb-6">// BEYONK SECURE CHECKOUT CORE</span>
+                
+                <booking-form 
+                    organisation="jfyevp8y" 
+                    integration="ic_kg47mnbg" 
+                    experience="puzj8s3i" 
+                    color="#FF4500">
+                </booking-form>
+            </div>
 
-			<!-- Right Column: The Netlify Engine Form -->
-			<div style="flex: 1 1 50%; min-width: 320px; padding: 48px; box-sizing: border-box; background-color: #FAFAFA; display: flex; flex-direction: column; justify-content: center;">
-				
-				<!-- The Netlify setup handles tracking automatically via 'data-netlify="true"' -->
-				<form 
-					name="shutter-scotland-booking" 
-					method="POST" 
-					data-netlify="true" 
-					action="/success"
-					style="display: flex; flex-direction: column; gap: 24px; width: 100%; max-width: 500px;"
-				>
-					<!-- Anti-spam honeypot field for security -->
-					<input type="hidden" name="form-name" value="shutter-scotland-booking" />
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono-clean text-xs text-punk-black mb-12">
+                <div class="border-2 border-punk-black p-4 bg-punk-white">
+                    <span class="text-punk-accent font-bold block mb-1">// COUPLING POINT</span>
+                    The Writers' Museum Courtyard, Lady Stair's Close (Off the Royal Mile). Arrive 5-10 minutes prior.
+                </div>
+                <div class="border-2 border-punk-black p-4 bg-punk-white">
+                    <span class="text-punk-accent font-bold block mb-1">// ELEMENT STATUS</span>
+                    Operates rain or shine. High-contrast overcast or slick stones build the best frames. Dress for the elements.
+                </div>
+            </div>
 
-					<div style="display: flex; flex-direction: column; gap: 8px;">
-						<label style="font-family: 'Courier New', monospace; font-size: 13px; font-weight: bold; color: #0A0A0A;">[ 01 // OPERATOR NAME ]</label>
-						<input type="text" name="name" required placeholder="e.g. John Doe" style="width: 100%; padding: 14px; border: 3px solid #0A0A0A; background-color: #FAFAFA; font-family: 'Courier New', monospace; font-size: 14px; box-sizing: border-box;" />
-					</div>
+            <div class="border-heavy border-punk-black bg-punk-white p-8 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                <span class="font-mono-clean text-xs text-punk-accent tracking-widest block mb-2">// INQUIRIES & COMMUNICATIONS</span>
+                <h2 class="font-sans-heavy text-2xl uppercase tracking-tight mb-4">DIRECT OPERATIONS</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 font-mono-clean text-sm">
+                    <div>
+                        <p class="text-zinc-600 leading-relaxed mb-4">
+                            Have questions about a booking, looking to arrange a bespoke private track for a group, or running into an operational delay? Drop a line directly to HQ.
+                        </p>
+                    </div>
+                    <div class="flex flex-col justify-center gap-3">
+                        <a href="mailto:hello@shutterscotland.co.uk?subject=SHUTTER%20SCOTLAND%20//%20OPERATIONS%20WIRE" class="block w-full text-center bg-punk-black text-punk-white hover:bg-punk-accent transition-colors font-bold py-4 border-2 border-punk-black uppercase tracking-wider">
+    [ EMAIL HQ // OPERATIONS ]
+</a>
+                        <span class="text-[10px] text-zinc-400 text-center uppercase tracking-widest">// Response window: Within 12 Hours</span>
+                    </div>
+                </div>
+            </div>
 
-					<div style="display: flex; flex-direction: column; gap: 8px;">
-						<label style="font-family: 'Courier New', monospace; font-size: 13px; font-weight: bold; color: #0A0A0A;">[ 02 // COMMS LINK / EMAIL ]</label>
-						<input type="email" name="email" required placeholder="e.g. john@example.com" style="width: 100%; padding: 14px; border: 3px solid #0A0A0A; background-color: #FAFAFA; font-family: 'Courier New', monospace; font-size: 14px; box-sizing: border-box;" />
-					</div>
+        </div>
+    </main>
+</html >
 
-					<div style="display: flex; flex-direction: column; gap: 8px;">
-						<label style="font-family: 'Courier New', monospace; font-size: 13px; font-weight: bold; color: #0A0A0A;">[ 03 // TARGET DATE & TIME ]</label>
-						<input type="text" name="target-date" required placeholder="e.g. Saturday 20th June, 2:00 PM" style="width: 100%; padding: 14px; border: 3px solid #0A0A0A; background-color: #FAFAFA; font-family: 'Courier New', monospace; font-size: 14px; box-sizing: border-box;" />
-					</div>
-
-					<div style="display: flex; flex-direction: column; gap: 8px;">
-						<label style="font-family: 'Courier New', monospace; font-size: 13px; font-weight: bold; color: #0A0A0A;">[ 04 // HARDWARE STATE / SMARTPHONE OR CAMERA? ]</label>
-						<input type="text" name="hardware" placeholder="e.g. Fujifilm X-T30 or iPhone" style="width: 100%; padding: 14px; border: 3px solid #0A0A0A; background-color: #FAFAFA; font-family: 'Courier New', monospace; font-size: 14px; box-sizing: border-box;" />
-					</div>
-
-					<div style="padding-top: 12px;">
-						<button type="submit" style="display: inline-block; width: 100%; font-family: 'Courier New', monospace; font-size: 14px; font-weight: bold; text-transform: uppercase; border: 3px solid #0A0A0A; background-color: #FF4500; color: #FAFAFA; padding: 16px; letter-spacing: 0.05em; box-shadow: 4px 4px 0px 0px #0A0A0A; cursor: pointer; transition: transform 0.1s ease;">
-							[ TRANSMIT BOOKING REQUEST ]
-						</button>
-					</div>
-				</form>
-
-			</div>
-
-		</section>
-
-	</main>
-</MainLayout>
+<script async src="https://integrations.beyonk.com/v1/sdk" type="module"></script>
