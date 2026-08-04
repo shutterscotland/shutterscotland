@@ -149,6 +149,47 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 			</div>
 		</section>
+		---
+<section class="border-t-heavy border-punk-black bg-punk-white py-12 px-6 sm:px-12">
+    <div class="max-w-6xl mx-auto">
+        
+        <div class="flex items-center justify-between mb-6">
+            <span class="font-mono-clean text-xs text-punk-accent tracking-widest uppercase">// VISUAL RAW LOGS // TRACK FRAMES</span>
+            <span class="font-mono-clean text-[10px] text-zinc-400 hidden sm:inline">// RECENT EXPOSURES</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            
+            <div class="border-heavy border-punk-black bg-punk-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] overflow-hidden group">
+                <img 
+                    src="/images/castle-from-websters-land.jpg" 
+                    alt="The Castle framed from Websters Land geometry" 
+                    class="w-full h-64 object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 ease-out"
+                    loading="lazy"
+                />
+            </div>
+
+            <div class="border-heavy border-punk-black bg-punk-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] overflow-hidden group">
+                <img 
+                    src="/images/royal-mile-statue.jpg" 
+                    alt="Gritty street perspective of a Lawnmarket shop front" 
+                    class="w-full h-64 object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 ease-out"
+                    loading="lazy"
+                />
+            </div>
+
+            <div class="border-heavy border-punk-black bg-punk-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] overflow-hidden group">
+                <img 
+                    src="/images/victoria-street-reflection.JPG" 
+                    alt="High-contrast architectural reflections on Victoria Street" 
+                    class="w-full h-64 object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 ease-out"
+                    loading="lazy"
+                />
+            </div>
+
+        </div>
+    </div>
+</section>
 	</main>
 </MainLayout>
 
