@@ -6,6 +6,7 @@ import MainLayout from '../layouts/MainLayout.astro';
     <main class="min-h-screen bg-punk-white py-16 px-6 sm:px-12">
         <div class="max-w-4xl mx-auto">
             
+            <!-- Page Header / Directive -->
             <div class="border-heavy border-punk-black bg-punk-black text-punk-white p-8 mb-12 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
                 <span class="font-mono-clean text-xs text-punk-accent tracking-widest block mb-2">// LIVE OPERATIONS // SYSTEM ENTRY</span>
                 <h1 class="font-sans-heavy text-4xl sm:text-5xl uppercase tracking-tight mb-4">
@@ -16,9 +17,11 @@ import MainLayout from '../layouts/MainLayout.astro';
                 </p>
             </div>
 
+            <!-- Brutalist Container for the Beyonk Widget -->
             <div class="border-heavy border-punk-black bg-punk-white p-4 sm:p-8 relative shadow-[6px_6px_0px_0px_rgba(255,69,0,1)] mb-8">
                 <span class="font-mono-clean text-[10px] text-zinc-500 block mb-6">// BEYONK SECURE CHECKOUT CORE</span>
                 
+                <!-- Native Beyonk Integration Component -->
                 <booking-form 
                     organisation="jfyevp8y" 
                     integration="ic_kg47mnbg" 
@@ -27,6 +30,7 @@ import MainLayout from '../layouts/MainLayout.astro';
                 </booking-form>
             </div>
 
+            <!-- Pre-Route Logistic Sync Notes -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono-clean text-xs text-punk-black mb-12">
                 <div class="border-2 border-punk-black p-4 bg-punk-white">
                     <span class="text-punk-accent font-bold block mb-1">// COUPLING POINT</span>
@@ -38,6 +42,7 @@ import MainLayout from '../layouts/MainLayout.astro';
                 </div>
             </div>
 
+            <!-- Direct Operations Contact Section -->
             <div class="border-heavy border-punk-black bg-punk-white p-8 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
                 <span class="font-mono-clean text-xs text-punk-accent tracking-widest block mb-2">// INQUIRIES & COMMUNICATIONS</span>
                 <h2 class="font-sans-heavy text-2xl uppercase tracking-tight mb-4">DIRECT OPERATIONS</h2>
@@ -50,8 +55,8 @@ import MainLayout from '../layouts/MainLayout.astro';
                     </div>
                     <div class="flex flex-col justify-center gap-3">
                         <a href="mailto:hello@shutterscotland.co.uk?subject=SHUTTER%20SCOTLAND%20//%20OPERATIONS%20WIRE" class="block w-full text-center bg-punk-black text-punk-white hover:bg-punk-accent transition-colors font-bold py-4 border-2 border-punk-black uppercase tracking-wider">
-    [ EMAIL HQ // OPERATIONS ]
-</a>
+                            [ EMAIL HQ // OPERATIONS ]
+                        </a>
                         <span class="text-[10px] text-zinc-400 text-center uppercase tracking-widest">// Response window: Within 12 Hours</span>
                     </div>
                 </div>
@@ -59,6 +64,7 @@ import MainLayout from '../layouts/MainLayout.astro';
 
         </div>
     </main>
-</html >
+</MainLayout>
 
+<!-- Beyonk Integration SDK Async Script Loader -->
 <script async src="https://integrations.beyonk.com/v1/sdk" type="module"></script>
