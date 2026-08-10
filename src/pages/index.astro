@@ -4,10 +4,9 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 <MainLayout title="Shutter Scotland | See Edinburgh Differently">
 	<main>
-		<!-- ORIGINAL HERO MANIFESTO SECTION -->
 		<section style="display: flex; flex-direction: row; flex-wrap: wrap; width: 100%; border-bottom: 3px solid #0A0A0A; overflow: hidden; background-color: #FAFAFA;">
 			
-			<div style="flex: 0 0 auto; width: 41.66%; min-width: 320px; padding: 48px; display: flex; flex-direction: column; justify-content: space-between; border-right: 3px solid #0A0A0A; box-sizing: border-box; background-color: #FAFAFA;">
+			<div class="w-full lg:w-5/12 border-b-[3px] lg:border-b-0 lg:border-r-[3px] border-[#0A0A0A] p-6 sm:p-12 flex flex-col justify-between box-border bg-[#FAFAFA]">
 				
 				<div style="margin-bottom: 40px;">
 					<h2 style="font-family: 'Courier New', monospace; font-size: 12px; font-weight: bold; background-color: #0A0A0A; color: #FAFAFA; padding: 2px 8px; letter-spacing: 0.1em; display: inline-block; margin: 0;">
@@ -34,7 +33,7 @@ import MainLayout from '../layouts/MainLayout.astro';
 				</div>
 			</div>
 			
-			<div style="flex: 1 1 0%; min-width: 320px; min-height: 550px; background-color: #0A0A0A; position: relative; box-sizing: border-box;">
+			<div class="flex-1 min-w-[320px] min-h-[350px] sm:min-h-[550px] bg-[#0A0A0A] relative box-border">
 				<img 
 					src="/images/royal-mile-street-image.jpg" 
 					alt="Black and white street photography of Edinburgh Royal Mile through a stone archway" 
@@ -47,7 +46,6 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 		</section>
 
-		<!-- ORIGINAL 01 / 02 / 03 GRID SECTION -->
 		<section class="grid grid-cols-1 md:grid-cols-3 font-mono-clean text-sm border-b border-punk-black bg-punk-white">
 			<div class="p-6 md:p-8 border-b md:border-b-0 md:border-r border-punk-black space-y-3">
 				<h3 class="font-sans-heavy text-lg uppercase tracking-tight text-punk-black">01 // VISUAL ISOLATION</h3>
@@ -65,11 +63,9 @@ import MainLayout from '../layouts/MainLayout.astro';
 			</div>
 		</section>
 
-		<!-- NEW TOUR DETAILS & TEASER GRID INSERTED HERE -->
 		<section class="max-w-4xl mx-auto px-6 py-20 font-sans text-punk-black bg-punk-white">
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 				
-				<!-- TOUR 1: Edinburgh Flagship -->
 				<div class="border-heavy border-punk-black p-8 flex flex-col justify-between bg-punk-white">
 					<div>
 						<span class="font-mono-clean text-xs uppercase tracking-wider text-punk-accent block mb-2">// FLAGSHIP TOUR</span>
@@ -83,7 +79,6 @@ import MainLayout from '../layouts/MainLayout.astro';
 					</a>
 				</div>
 
-				<!-- TOUR 2: Glasgow Coming Soon -->
 				<div class="border-heavy border-punk-black p-8 flex flex-col justify-between bg-punk-black text-punk-white">
 					<div>
 						<span class="font-mono-clean text-xs uppercase tracking-wider text-punk-accent block mb-2">// COMING SOON</span>
@@ -100,7 +95,6 @@ import MainLayout from '../layouts/MainLayout.astro';
 			</div>
 		</section>
 
-		<!-- ORIGINAL BOTTOM SUMMARY GALLERY BUILDER SECTION -->
 		<section style="display: flex; flex-direction: row; flex-wrap: wrap; width: 100%; border-bottom: 3px solid #0A0A0A; background-color: #FAFAFA; overflow: hidden;">
 			
 			<div style="flex: 1 1 50%; min-width: 320px; padding: 48px; background-color: #0A0A0A; color: #FAFAFA; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
@@ -149,47 +143,47 @@ import MainLayout from '../layouts/MainLayout.astro';
 
 			</div>
 		</section>
-		---
-<section class="border-t-heavy border-punk-black bg-punk-white py-12 px-6 sm:px-12">
-    <div class="max-w-6xl mx-auto">
-        
-        <div class="flex items-center justify-between mb-6">
-            <span class="font-mono-clean text-xs text-punk-accent tracking-widest uppercase">// VISUAL RAW LOGS // TRACK FRAMES</span>
-            <span class="font-mono-clean text-[10px] text-zinc-400 hidden sm:inline">// RECENT EXPOSURES</span>
-        </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            
-            <div class="border-heavy border-punk-black bg-punk-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] overflow-hidden group">
-                <img 
-                    src="/images/castle-from-websters-land.jpg" 
-                    alt="The Castle framed from Websters Land geometry" 
-                    class="w-full h-64 object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 ease-out"
-                    loading="lazy"
-                />
-            </div>
+		<section class="border-t-heavy border-punk-black bg-punk-white py-12 px-6 sm:px-12">
+			<div class="max-w-6xl mx-auto">
+				
+				<div class="flex items-center justify-between mb-6">
+					<span class="font-mono-clean text-xs text-punk-accent tracking-widest uppercase">// VISUAL RAW LOGS // TRACK FRAMES</span>
+					<span class="font-mono-clean text-[10px] text-zinc-400 hidden sm:inline">// RECENT EXPOSURES</span>
+				</div>
 
-            <div class="border-heavy border-punk-black bg-punk-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] overflow-hidden group">
-                <img 
-                    src="/images/royal-mile-statue.jpg" 
-                    alt="Gritty street perspective of a Lawnmarket shop front" 
-                    class="w-full h-64 object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 ease-out"
-                    loading="lazy"
-                />
-            </div>
+				<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+					
+					<div class="border-heavy border-punk-black bg-punk-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] overflow-hidden group">
+						<img 
+							src="/images/castle-from-websters-land.jpg" 
+							alt="The Castle framed from Websters Land geometry" 
+							class="w-full h-64 object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 ease-out"
+							loading="lazy"
+						/>
+					</div>
 
-            <div class="border-heavy border-punk-black bg-punk-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] overflow-hidden group">
-                <img 
-                    src="/images/victoria-street-reflection.JPG" 
-                    alt="High-contrast architectural reflections on Victoria Street" 
-                    class="w-full h-64 object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 ease-out"
-                    loading="lazy"
-                />
-            </div>
+					<div class="border-heavy border-punk-black bg-punk-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] overflow-hidden group">
+						<img 
+							src="/images/royal-mile-statue.jpg" 
+							alt="Gritty street perspective of a Lawnmarket shop front" 
+							class="w-full h-64 object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 ease-out"
+							loading="lazy"
+						/>
+					</div>
 
-        </div>
-    </div>
-</section>
+					<div class="border-heavy border-punk-black bg-punk-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] overflow-hidden group">
+						<img 
+							src="/images/victoria-street-reflection.JPG" 
+							alt="High-contrast architectural reflections on Victoria Street" 
+							class="w-full h-64 object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500 ease-out"
+							loading="lazy"
+						/>
+					</div>
+
+				</div>
+			</div>
+		</section>
 	</main>
 </MainLayout>
 
